@@ -2,7 +2,7 @@
 
 Plan for Structure of Project:
 
-'''
+```
 |__application
        |_cache
        |_ci_user
@@ -24,4 +24,4 @@ Plan for Structure of Project:
 |__user_guide
 |__ .htaccess
 |__ index.php
-'''
+```
