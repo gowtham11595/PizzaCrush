@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html >
+<head>
+
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="description" content="Coupon Codes, Promotion Codes, Promo Codes and Discount deals in India for all online shopping stores.">
+<meta name="keywords" content="discount coupons, coupon codes, promo codes, coupons, promotions codes">
+<meta name="Cashback and  online coupons and discounts" content="Shoppingbaba">
+<meta name="Coupons and Indias no 1 cashback website" content="Shoppingbaba">
+
+
+<style> @import url('<?=base_url()?>assets/css/jquery-ui-1.10.3.custom.css');</style>
+
+<link rel="stylesheet" href="<?php echo base_url();?>assets/css/newcss/v2.css" type="text/css"/>
+
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-1.9.1.js" ></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>assets/js/jquery-ui-1.10.3.custom.js" ></script>
+
+
+
+
+<script>
+
+    $(document).ready(function(){
+
+	 $('.new_search_bar').hide();
+
+$('#search_bar').keyup(function(e){
+
+
+		var searched = $('#search_bar').val()
+
+
+		$.getJSON('<?php echo base_url();?>get_data','title='+searched,function(result){
+
+			var elements = [];
+
+			$.each(result,function(i,val){
+				elements.push(val.merchant_name)
+				})
+
+			$('#search_bar').autocomplete({
+				source : elements,
+				 select: function(event, ui) { 
+				     $("input#search_bar").val(ui.item.value);
+				     $("#get").click();
+					   }
+				})     
+
+			})
+		});
+
+});
+
+$(document).scroll(function (e) {
+		if ($(document).scrollTop() >= 129) {
+		$('.new_search_bar').show(200);
+		} else {
+		$('.new_search_bar').hide(200);
+		}
+		});
+
+</script>
+
+
+</head>
+
+<body class="bkgnd" style="margin:auto;">
+
+<div class="menu_bar">
+<div class="menu_bar_content">
+
+<a href="<?php echo base_url();?>"><img class="logo" src="<?php echo base_url();?>assets/images/newimages/logo.png"/></a>
+<ul class="menu">
+<a href="#"><li class="menu_names"> Stores </li></a>
+</ul>
+
+<div class="login_holder">
+    <div class = "new_search_bar">
+	hello vamshi
+    </div>
+    <a href="<?php echo base_url();?>login_page/1" class="login_button">login</a>
+    <a href="<?php echo base_url();?>login_page/1"  class="login_button">Sign Up</a>
+</div>
+
+</div>
+</div>
+
+<div class="home_banner">
+<div class="banner_content">
+<div class="cashkart_logo" >
+<img src="<?php echo base_url();?>assets/images/newimages/cashkart.png" height="110" width="110"/>
+</div>
+<div class="Details_Searchbar">
+<!--<div class="Who">
+ <span style="color:red;"><?echo $this->session->flashdata('merchant');?></span>
+</div>-->
+<form action ="<?php echo base_url();?>data" method="post" id ="searchform" >
+
+<div class="search_holder">
+
+</div>
+
+<input type="text" class="onfocus-search-box" id="search_bar" name="url" value="" placeholder="Search for online store">
+<button class="myButton" style = "width:180px;margin-top:15px;height:34px;" id = "get" name="submitform" value="get_details" type="submit" style="margin-left:260px;margin-top:15px;"/>GET DETAILS</button>
+             <!--<button class="myButton" style = "width:180px;margin-top:15px;margin-left:30px;height:34px;" id = "url" name ="submitform" value="url_redirect" type="submit" style="margin-left:20px;margin-top:15px;">GO TO STORE</button>-->
+</div>
+<div class="steps_holder" >
+<img class="steps" src="<?php echo base_url();?>assets/images/newimages/steps.png"/>
+</div>
+
+
+
+
+</form>
+
+</div>
+</div>
+
+
+

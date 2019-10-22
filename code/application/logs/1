@@ -1,0 +1,48 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2013-10-08 02:36:29 --> The upload path does not appear to be valid.
+ERROR - 2013-10-08 02:37:19 --> The upload path does not appear to be valid.
+ERROR - 2013-10-08 02:38:22 --> The upload path does not appear to be valid.
+ERROR - 2013-10-08 02:40:09 --> The upload path does not appear to be valid.
+ERROR - 2013-10-08 02:40:36 --> The upload path does not appear to be valid.
+ERROR - 2013-10-08 03:07:14 --> Severity: Notice  --> Undefined variable: objPHPExcel /var/www/shoppingbaba/application/modules/admin/controllers/welcome.php 197
+ERROR - 2013-10-08 03:09:18 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 323
+ERROR - 2013-10-08 03:09:18 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 326
+ERROR - 2013-10-08 03:09:18 --> Severity: Notice  --> Trying to get property of non-object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 358
+ERROR - 2013-10-08 03:09:18 --> Severity: Warning  --> Invalid argument supplied for foreach() /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 358
+ERROR - 2013-10-08 03:09:18 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 323
+ERROR - 2013-10-08 03:09:18 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 326
+ERROR - 2013-10-08 03:09:18 --> Severity: Notice  --> Trying to get property of non-object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 395
+ERROR - 2013-10-08 03:09:18 --> Severity: Warning  --> Invalid argument supplied for foreach() /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 395
+ERROR - 2013-10-08 03:09:18 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 323
+ERROR - 2013-10-08 03:09:18 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 326
+ERROR - 2013-10-08 03:09:18 --> Severity: Notice  --> Trying to get property of non-object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 1681
+ERROR - 2013-10-08 03:09:18 --> Severity: Warning  --> Invalid argument supplied for foreach() /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 1681
+ERROR - 2013-10-08 03:09:18 --> Severity: Warning  --> ZipArchive::close(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 1715
+ERROR - 2013-10-08 03:09:18 --> Severity: Notice  --> Undefined offset: -1 /var/www/shoppingbaba/application/third_party/PHPExcel.php 228
+ERROR - 2013-10-08 03:51:23 --> 404 Page Not Found --> 
+ERROR - 2013-10-08 03:53:33 --> Unable to load the requested class: excel_new
+ERROR - 2013-10-08 04:03:19 --> errorcode20:uid ef26104c01b6c9609fd9b4d211aab635 red amount 200 click id ef26104c01b6c9609fd9b4d211aab635 update requested
+ERROR - 2013-10-08 04:03:19 --> errorcode20:uid ef26104c01b6c9609fd9b4d211aab635 red amount 200 click id ef26104c01b6c9609fd9b4d211aab635 merchant Paytm commision rate 75
+ERROR - 2013-10-08 04:03:19 --> errorcode20:uid ef26104c01b6c9609fd9b4d211aab635 red amount 200 click id ef26104c01b6c9609fd9b4d211aab635 merchant Paytm commision rate 75 red_flag updated
+ERROR - 2013-10-08 04:03:19 --> errorcode20:uid ef26104c01b6c9609fd9b4d211aab635 walet amount 150 click id ef26104c01b6c9609fd9b4d211aab635 merchant Paytm new user wallet updated
+ERROR - 2013-10-08 04:20:34 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 323
+ERROR - 2013-10-08 04:20:34 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 326
+ERROR - 2013-10-08 04:20:34 --> Severity: Notice  --> Trying to get property of non-object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 358
+ERROR - 2013-10-08 04:20:34 --> Severity: Warning  --> Invalid argument supplied for foreach() /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 358
+ERROR - 2013-10-08 04:20:34 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 323
+ERROR - 2013-10-08 04:20:34 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 326
+ERROR - 2013-10-08 04:20:34 --> Severity: Notice  --> Trying to get property of non-object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 395
+ERROR - 2013-10-08 04:20:34 --> Severity: Warning  --> Invalid argument supplied for foreach() /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 395
+ERROR - 2013-10-08 04:20:34 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 323
+ERROR - 2013-10-08 04:20:34 --> Severity: Warning  --> ZipArchive::getFromName(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 326
+ERROR - 2013-10-08 04:20:34 --> Severity: Notice  --> Trying to get property of non-object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 1681
+ERROR - 2013-10-08 04:20:34 --> Severity: Warning  --> Invalid argument supplied for foreach() /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 1681
+ERROR - 2013-10-08 04:20:34 --> Severity: Warning  --> ZipArchive::close(): Invalid or unitialized Zip object /var/www/shoppingbaba/application/third_party/PHPExcel/Reader/Excel2007.php 1715
+ERROR - 2013-10-08 04:20:34 --> Severity: Notice  --> Undefined offset: -1 /var/www/shoppingbaba/application/third_party/PHPExcel.php 228
+ERROR - 2013-10-08 06:14:48 --> 404 Page Not Found --> 
+ERROR - 2013-10-08 06:15:01 --> errorcode20:uid sbaba red amount 612 click id sbaba update requested
+ERROR - 2013-10-08 06:17:30 --> errorcode20:uid e48ae36dd8ae49b918b47a859b47565b red amount 612 click id e48ae36dd8ae49b918b47a859b47565b update requested
+ERROR - 2013-10-08 06:17:30 --> errorcode20:uid e48ae36dd8ae49b918b47a859b47565b red amount 612 click id e48ae36dd8ae49b918b47a859b47565b merchant Flipkart commision rate 70
+ERROR - 2013-10-08 06:17:30 --> errorcode20:uid e48ae36dd8ae49b918b47a859b47565b red amount 612 click id e48ae36dd8ae49b918b47a859b47565b merchant Flipkart commision rate 70 red_flag updated
+ERROR - 2013-10-08 06:17:30 --> errorcode20:uid e48ae36dd8ae49b918b47a859b47565b walet amount 428.4 click id e48ae36dd8ae49b918b47a859b47565b merchant Flipkart new user wallet updated

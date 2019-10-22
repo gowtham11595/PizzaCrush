@@ -1,0 +1,31 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2015-04-08 09:18:45 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:19:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:19:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:19:50 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:19:53 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:19:59 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:02 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:10 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:10 --> Severity: Notice  --> Undefined variable: uid C:\wamp\www\quiz\application\modules\sign\controllers\login.php 462
+ERROR - 2015-04-08 09:20:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\wamp\www\quiz\application\modules\sign\controllers\login.php 462
+ERROR - 2015-04-08 09:20:10 --> Severity: Notice  --> Undefined variable: username C:\wamp\www\quiz\application\modules\sign\controllers\login.php 472
+ERROR - 2015-04-08 09:20:10 --> Severity: Notice  --> Undefined variable: sum C:\wamp\www\quiz\application\modules\sign\controllers\login.php 473
+ERROR - 2015-04-08 09:20:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\wamp\www\quiz\application\modules\sign\views\total_score11.php 67
+ERROR - 2015-04-08 09:20:10 --> Severity: Warning  --> Invalid argument supplied for foreach() C:\wamp\www\quiz\application\modules\sign\views\total_score11.php 73
+ERROR - 2015-04-08 09:20:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:17 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:18 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:22 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:25 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:29 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:37 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:37 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:42 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:45 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:48 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:50 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:59 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-04-08 09:20:59 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\quiz\system\database\drivers\mysql\mysql_driver.php 91

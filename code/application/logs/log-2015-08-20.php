@@ -1,0 +1,13 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2015-08-20 04:58:34 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\pizzahunt\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-08-20 13:26:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\pizzahunt\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-08-20 13:26:19 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\pizzahunt\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-08-20 13:26:19 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\pizzahunt\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-08-20 13:26:23 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\pizzahunt\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-08-20 13:26:26 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\pizzahunt\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-08-20 13:26:32 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\pizzahunt\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-08-20 13:26:35 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\pizzahunt\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-08-20 13:26:37 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\pizzahunt\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-08-20 13:26:38 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\pizzahunt\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2015-08-20 13:26:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\pizzahunt\system\database\drivers\mysql\mysql_driver.php 91

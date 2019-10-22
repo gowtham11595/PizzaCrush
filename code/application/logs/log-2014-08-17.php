@@ -1,0 +1,33 @@
+<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
+
+ERROR - 2014-08-17 17:12:19 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:12:19 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:15:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:15:50 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:16:08 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:17:04 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:17:20 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:17:24 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:17:25 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:17:29 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:17:30 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:17:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:17:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:17:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:17:31 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:18:42 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:18:43 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:18:43 --> 404 Page Not Found --> 
+ERROR - 2014-08-17 17:19:28 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:19:42 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:19:47 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:19:47 --> 404 Page Not Found --> 
+ERROR - 2014-08-17 17:20:09 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:21:48 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:22:01 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:22:13 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:22:15 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:22:39 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:22:41 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
+ERROR - 2014-08-17 17:28:45 --> 404 Page Not Found --> 
+ERROR - 2014-08-17 17:29:34 --> Severity: 8192  --> mysql_pconnect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead C:\wamp\www\don\system\database\drivers\mysql\mysql_driver.php 91
