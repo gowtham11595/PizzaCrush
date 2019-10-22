@@ -507,6 +507,128 @@ function do_addtoppings()
 
 	}
 	}
+	
+	public function updatepizzaprice()
+	{
+		if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $data['main_body']='updatepizzaprice.php';
+	   	$this->load->view('template.php',$data);
+	}
+	public function updatetoppingsprice()
+	{
+	   	if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $data['main_body']='updatetoppingsprice.php';
+		$this->load->view('template.php',$data);
+	}
+	public function updatebreadprice()
+	{
+	   	if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $data['main_body']='updatebreadprice.php';
+		$this->load->view('template.php',$data);
+	}
+
+	public function updatesauceprice()
+	{
+	   	if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $data['main_body']='updatesauceprice.php';
+		$this->load->view('template.php',$data);
+	}
+
+
+
+
+
+	public function updatepizzaprice_submit()
+	{
+	   	if($this->session->userdata('id')=='')
+		{redirect('');}
+		$data=$this->input->post();
+	    $size=$this->db->select('name')->from('pizzas')->where('name',$data['pizzaname'])->where('size',$data['size'])->get()->result();
+		if(Sizeof($size)!=0)
+		{
+			$d['price']=$data['price'];
+		    $this->db->where('name', $data['pizzaname'])->where('size',$data['size']);
+            $this->db->update('pizzas',$d);
+		    print_r("success!!");
+			//$this->load->view('Success.php');//, $data);
+	    }
+		else
+		{
+			print_r("This topping already exists.");
+			$this->load->view('updatepizzaprice.php',$data);
+		}
+	}
+	public function updatetoppingsprice_submit()
+	{
+
+		if($this->session->userdata('id')=='')
+		{redirect('');}
+		$data=$this->input->post();
+	    $size=$this->db->select('name')->from('toppings')->where('name',$data['toppingsname'])->get()->result();
+		if(Sizeof($size)!=0)
+		{
+			$d['price']=$data['price'];
+		    $this->db->where('name', $data['toppingsname']);
+            $this->db->update('toppings',$d);
+		    print_r("success!!");
+			//$this->load->view('Success.php');//, $data);
+	    }
+		else
+		{
+			print_r("This topping already exists.");
+			$this->load->view('updatetoppingsprice.php',$data);
+		}
+	}
+
+
+	public function updatebreadprice_submit()
+	{
+
+		if($this->session->userdata('id')=='')
+		{redirect('');}
+		$data=$this->input->post();
+	    $size=$this->db->select('name')->from('breads')->where('name',$data['name'])->where('size',$data['size'])->get()->result();
+		if(Sizeof($size)!=0)
+		{
+			$d['price']=$data['price'];
+		    $this->db->where('name', $data['name'])->where('size',$data['size']);
+            $this->db->update('breads',$d);
+		    print_r("success!!");
+			//$this->load->view('Success.php');//, $data);
+	    }
+		else
+		{
+			print_r("This topping already exists.");
+			$this->load->view('updatebreadsprice.php',$data);
+		}
+	}
+
+
+	public function updatesauceprice_submit()
+	{
+	   	if($this->session->userdata('id')=='')
+		{redirect('');}
+		$data=$this->input->post();
+	    $size=$this->db->select('name')->from('sauce')->where('name',$data['name'])->get()->result();
+		if(Sizeof($size)!=0)
+		{
+			$d['price']=$data['price'];
+		    $this->db->where('name', $data['name']);
+            $this->db->update('sauce',$d);
+		    print_r("success!!");
+			//$this->load->view('Success.php');//, $data);
+	    }
+		else
+		{
+			print_r("This topping already exists.");
+			$this->load->view('updatetoppingsprice.php',$data);
+		}
+	}
+
 
 }
 
