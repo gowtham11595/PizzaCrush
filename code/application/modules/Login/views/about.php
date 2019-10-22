@@ -19,12 +19,12 @@ else{e.value="no";location.reload();}
     width:100px;
     height:30px;
 }
-.pic:hover { opacity: 0.3; filter: alpha(opacity=30); } 
+.pic:hover { opacity: 0.3; filter: alpha(opacity=30); }
 
 body{margin:40px;}
 
 .stepwizard-step p {
-    margin-top: 10px;    
+    margin-top: 10px;
 }
 
 .stepwizard-row {
@@ -32,7 +32,7 @@ body{margin:40px;}
 }
 
 .stepwizard {
-    display: table;     
+    display: table;
     width: 100%;
     position: relative;
 }
@@ -51,10 +51,10 @@ body{margin:40px;}
     height: 1px;
     background-color: #ccc;
     z-order: 0;
-    
+
 }
 
-.stepwizard-step {    
+.stepwizard-step {
     display: table-cell;
     text-align: center;
     position: relative;
@@ -70,9 +70,9 @@ body{margin:40px;}
   border-radius: 15px;
 }
 </style>
-	
+
 </head>
-<body style="background:url('http://img0.gtsstatic.com/wallpapers/a76f707df270e5a17d5c981332c22732_large.jpeg')">
+<body style="background:url('https://marcosfranchising.com/wp-content/uploads/2018/05/Marcos-Pizza-Franchise-Pepperoni-1024x772.jpg')">
 <div class="container"style="margin-top:90px;font-size:130%;background:whitesmoke;border-radius:20px;font-family: 'Alegreya Sans SC', sans-serif;
   font-size: 20px;color: red;">
 JustPizza is an online  pizza ordering website where<br>you can order delicious pizzas.<br>
@@ -96,16 +96,16 @@ You can order readymade pizza and select toppings of your choice OR
             <button type="button" class="btn btn-default btn-circle" disabled="disabled">3</button>
             <p>Select pizza/pizzas</p>
         </div>
-      	
+
         <div class="stepwizard-step">
             <button type="button" class="btn btn-default btn-circle" disabled="disabled">4</button>
             <p>Select Toppings</p>
         </div>
-        
+
         <div class="stepwizard-step">
             <button type="button" class="btn btn-default btn-circle" disabled="disabled">5</button>
             <p>Payment</p>
-        </div>		
+        </div>
     </div>
 </div>
 
@@ -128,12 +128,12 @@ You can order readymade pizza and select toppings of your choice OR
             <button type="button" class="btn btn-default btn-circle" disabled="disabled">3</button>
             <p>Select Type Of Bread/Bun</p>
         </div>
-      	
+
         <div class="stepwizard-step">
             <button type="button" class="btn btn-default btn-circle" disabled="disabled">4</button>
             <p>Select Toppings</p>
         </div>
-      
+
         <div class="stepwizard-step">
             <button type="button" class="btn btn-default btn-circle" disabled="disabled">5</button>
             <p>Select Sauce</p>
@@ -142,7 +142,7 @@ You can order readymade pizza and select toppings of your choice OR
         <div class="stepwizard-step">
             <button type="button" class="btn btn-default btn-circle" disabled="disabled">6</button>
             <p>Payment</p>
-        </div>		
+        </div>
     </div>
 </div>
 
@@ -160,7 +160,7 @@ You can order readymade pizza and select toppings of your choice OR
 <div class="navbar navbar-default navbar-fixed-bottom"  style="background:inherit; height: 28px;">
        <p class="navbar-text pull-left" style="display:block;color:blue;background:white;" >
 	  Contact: onestep@gmail.com
-      </p>		
+      </p>
 </div>
 
 
