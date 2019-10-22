@@ -217,6 +217,296 @@ class Signinup extends MX_Controller {
 		print_r("success");
 
 	}
+	
+	public function addpizza()
+	{   if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $data['main_body']='addpizza.php';
+		$this->load->view('template.php',$data);
+	}
+	public function addtoppings()
+	{   if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $data['main_body']='addtoppings.php';
+		$this->load->view('template.php',$data);
+	}
+	public function addbread()
+	{   if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $data['main_body']='addbread.php';
+		$this->load->view('template.php',$data);
+	}
+
+
+   
+
+	public function addbranch()
+	{
+	   	if($this->session->userdata('id')=='')
+		{redirect('');}
+	     $data['main_body']='addbranch.php';
+		$this->load->view('template.php',$data);
+	}
+	public function addsauce()
+	{
+	    if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $data['main_body']='addsauce.php';
+		$this->load->view('template.php',$data);
+	}
+	function do_addpizza()
+	{
+	   	if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $config['upload_path'] = 'assets/uploads/';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['max_size']	= '10000000';
+		$config['max_width']  = '10000000';
+		$config['max_height']  = '10000000';
+
+		$this->load->library('upload', $config);
+        $this->load->library('image_lib');
+		if ( ! $this->upload->do_upload())
+		{
+			$data['error'] = $this->upload->display_errors();
+
+			print_r($data['error']);
+
+			//$this->load->view('addpizza.php', $data);
+		}
+		else
+		{
+		      $result = array('upload_data' => $this->upload->data());
+              $data = $result['upload_data'];
+			  $insert_data = array(
+              'name' =>$this->input->post('pizza_name'),
+              'path' => $data['file_name'],
+			  'category'  =>$this->input->post('category'),
+              'price'  =>$this->input->post('spizza_price'),
+              'size'  =>"small",
+			  'status' =>'added'
+              );
+
+	    $this->db->insert('pizzas', $insert_data);//load array to database
+
+
+		       $insert_data = array(
+              'name' =>$this->input->post('pizza_name'),
+              'path' => $data['file_name'],
+			  'category'  =>$this->input->post('category'),
+              'price'  =>$this->input->post('mpizza_price'),
+              'size'  =>"medium",
+			  'status' =>'added'
+              );
+
+	    $this->db->insert('pizzas', $insert_data);//load array to database
+
+			    $insert_data = array(
+              'name' =>$this->input->post('pizza_name'),
+              'path' => $data['file_name'],
+			  'category'  =>$this->input->post('category'),
+              'price'  =>$this->input->post('lpizza_price'),
+              'size'  =>"large",
+			  'status' =>'added'
+              );
+
+	    $this->db->insert('pizzas', $insert_data);//load array to database
+
+
+			print_r("success!!");
+			//$this->load->view('Success.php');//, $data);
+
+
+	}
+	}
+
+
+function do_addtoppings()
+	{
+	   	if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $config['upload_path'] = 'assets/uploadtoppings/';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['max_size']	= '10000000';
+		$config['max_width']  = '10000000';
+		$config['max_height']  = '10000000';
+
+		$this->load->library('upload', $config);
+        $this->load->library('image_lib');
+		if ( ! $this->upload->do_upload())
+		{
+			$data['error'] = $this->upload->display_errors();
+
+			print_r($data['error']);
+
+			//$this->load->view('addpizza.php', $data);
+		}
+		else
+		{
+		      $result = array('upload_data' => $this->upload->data());
+              $data = $result['upload_data'];
+			  $insert_data = array(
+              'name' =>$this->input->post('topping_name'),
+              'path' => $data['file_name'],
+			  'category'  =>$this->input->post('category'),
+              'price'  =>$this->input->post('topping_price'),
+              'status' =>'added'
+			 );
+
+	    $this->db->insert('toppings', $insert_data);//load array to database
+			print_r("success!!");
+			//$this->load->view('Success.php');//, $data);
+
+
+	}
+	}
+
+
+
+	function do_addbread()
+	{
+	    if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $config['upload_path'] = 'assets/uploadbread/';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['max_size']	= '10000000';
+		$config['max_width']  = '10000000';
+		$config['max_height']  = '10000000';
+
+		$this->load->library('upload', $config);
+        $this->load->library('image_lib');
+		if ( ! $this->upload->do_upload())
+		{
+			$data['error'] = $this->upload->display_errors();
+
+			print_r($data['error']);
+
+			//$this->load->view('addpizza.php', $data);
+		}
+		else
+		{
+		      $result = array('upload_data' => $this->upload->data());
+              $data = $result['upload_data'];
+			  $insert_data = array(
+              'name' =>$this->input->post('name'),
+              'path' => $data['file_name'],
+              'price'  =>$this->input->post('sprice'),
+              'size' =>"small",
+			  'status' =>'added'
+
+              );
+
+	    $this->db->insert('breads', $insert_data);//load array to database
+			print_r("success!!");
+
+			  $insert_data = array(
+              'name' =>$this->input->post('name'),
+              'path' => $data['file_name'],
+              'price'  =>$this->input->post('mprice'),
+              'size' =>"medium",
+			  'status' =>'added'
+
+              );
+
+	    $this->db->insert('breads', $insert_data);//load array to database
+
+			  $insert_data = array(
+              'name' =>$this->input->post('name'),
+              'path' => $data['file_name'],
+              'price'  =>$this->input->post('lprice'),
+              'size' =>"large",
+			  'status' =>'added'
+
+              );
+
+	    $this->db->insert('breads', $insert_data);//load array to database
+
+			//$this->load->view('Success.php');//, $data);
+
+
+	}
+	}
+
+
+
+		function do_addextra()
+	{
+	    if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $config['upload_path'] = 'assets/uploadextras/';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['max_size']	= '10000000';
+		$config['max_width']  = '10000000';
+		$config['max_height']  = '10000000';
+
+		$this->load->library('upload', $config);
+        $this->load->library('image_lib');
+		if ( ! $this->upload->do_upload())
+		{
+			$data['error'] = $this->upload->display_errors();
+
+			print_r($data['error']);
+
+			//$this->load->view('addpizza.php', $data);
+		}
+		else
+		{
+		      $result = array('upload_data' => $this->upload->data());
+              $data = $result['upload_data'];
+			  $insert_data = array(
+              'name' =>$this->input->post('name'),
+              'path' => $data['file_name'],
+              'price'  =>$this->input->post('price'),
+			  'status' =>'added'
+              );
+
+	    $this->db->insert('extras', $insert_data);//load array to database
+			print_r("success!!");
+			//$this->load->view('Success.php');//, $data);
+
+
+	}
+	}
+
+
+	function do_addsauce()
+	{
+	    if($this->session->userdata('id')=='')
+		{redirect('');}
+		$config['upload_path'] = 'assets/uploadsauce/';
+		$config['allowed_types'] = 'gif|jpg|png';
+		$config['max_size']	= '10000000';
+		$config['max_width']  = '10000000';
+		$config['max_height']  = '10000000';
+
+		$this->load->library('upload', $config);
+        $this->load->library('image_lib');
+		if ( ! $this->upload->do_upload())
+		{
+			$data['error'] = $this->upload->display_errors();
+
+			print_r($data['error']);
+
+
+		}
+		else
+		{
+		      $result = array('upload_data' => $this->upload->data());
+              $data = $result['upload_data'];
+			  $insert_data = array(
+              'name' =>$this->input->post('name'),
+              'path' => $data['file_name'],
+              'price'  =>$this->input->post('price'),
+			  'status' =>'added'
+              );
+
+	    $this->db->insert('sauce', $insert_data);//load array to database
+			print_r("success!!");
+			//$this->load->view('Success.php');//, $data);
+
+
+	}
+	}
 
 }
 
