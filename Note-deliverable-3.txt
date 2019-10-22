@@ -1,0 +1,3 @@
+Deliverable 3 doc is inside https://github.com/gowtham11595/PizzaCrush/blob/master/deliverables/Deliverable_3.pdf
+Minutes of meeting is under https://github.com/gowtham11595/PizzaCrush/tree/master/minutes_of_meetings
+Code Inspection for phase 1 is under https://github.com/gowtham11595/PizzaCrush/blob/master/Inspection-code-Team8.docx
