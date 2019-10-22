@@ -628,6 +628,144 @@ function do_addtoppings()
 			$this->load->view('updatetoppingsprice.php',$data);
 		}
 	}
+function deletepizza()
+	{
+        if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $data['main_body']='deletepizza.php';
+		$this->load->view('template.php',$data);
+	}
+	function deletetoppings()
+	{
+     	if($this->session->userdata('id')=='')
+		{redirect('');}
+	 $data['main_body']='deletetoppings.php';
+	 $this->load->view('template.php',$data);
+	}
+
+	function deletebread()
+	{
+       	if($this->session->userdata('id')=='')
+		{redirect('');}
+	   $data['main_body']='deletebread.php';
+	   $this->load->view('template.php',$data);
+	}
+	function deletesauce()
+	{
+		if($this->session->userdata('id')=='')
+		{redirect('');}
+	     $data['main_body']='deletesauce.php';
+        $this->load->view('template.php',$data);
+	}
+	function deletebranch()
+	{
+	    if($this->session->userdata('id')=='')
+		{redirect('');}
+	    $data['main_body']='deletebranch.php';
+        $this->load->view('template.php',$data);
+	}
+	
+
+	
+	public function deletepizza_submit()
+	{
+
+      		if($this->session->userdata('id')=='')
+		{redirect('');}
+ 		$data=$this->input->post();
+		 $size=$this->db->select('id')->from('pizzas')->where('name',$data['name'])->where('size',$data['size'])->get()->result();
+
+         if(Sizeof($size)!=0)
+		 {
+	         $size=$size[0];
+			 $size=(array)$size;
+			 $size=$size['id'];
+			 $d['status']='deleted';
+			 $this->db->where('id',$size);
+             $this->db->update('pizzas',$d);
+			 $sizer=$this->db->select('id')->from('pizzas')->where('name',$data['name'])->where('status','added')->get()->result();
+			 if(Sizeof($sizer)==0)
+			 {$this->db->delete('review',array('pizzaname' => $data['name'] ));}
+			 print_r('success');
+		 }
+         else{print_r("no such pizza exists");}
+	}
+
+	public function deletetoppings_submit()
+	{		if($this->session->userdata('id')=='')
+		{redirect('');}
+		 $data=$this->input->post();
+		 $size=$this->db->select('id')->from('toppings')->where('name',$data['name'])->where('category',$data['category'])->get()->result();
+         if(Sizeof($size)!=0)
+		 {
+	         $size=$size[0];
+			 $size=(array)$size;
+			 $size=$size['id'];
+			 $d['status']='deleted';
+			 $this->db->where('id',$size);
+             $this->db->update('toppings',$d);
+			// $this->db->delete('toppings',array('id' => $size ));
+			 print_r('success');
+		 }
+         else{print_r("no such topping exists");}
+	}
+
+
+    public function deletebread_submit()
+	{		if($this->session->userdata('id')=='')
+		{redirect('');}
+		 $data=$this->input->post();
+		 $size=$this->db->select('id')->from('breads')->where('name',$data['name'])->where('size',$data['size'])->get()->result();
+         if(Sizeof($size)!=0)
+		 {
+	         $size=$size[0];
+			 $size=(array)$size;
+			 $size=$size['id'];
+			 $d['status']='deleted';
+			 $this->db->where('id',$size);
+             $this->db->update('breads',$d);
+			// $this->db->delete('breads',array('id' => $size ));
+			 print_r('success');
+		 }
+         else{print_r("no such bread exists");}
+	}
+
+	public function deletesauce_submit()
+	{		if($this->session->userdata('id')=='')
+		{redirect('');}
+		 $data=$this->input->post();
+		 $size=$this->db->select('id')->from('sauce')->where('name',$data['name'])->get()->result();
+         if(Sizeof($size)!=0)
+		 {
+	         $size=$size[0];
+			 $size=(array)$size;
+			 $size=$size['id'];
+			 $d['status']='deleted';
+			 $this->db->where('id',$size);
+             $this->db->update('sauce',$d);
+			// $this->db->delete('sauce',array('id' => $size ));
+			 print_r('success');
+		 }
+         else{print_r("no such sauce exists");}
+	}
+	public function deletebranch_submit()
+	{		if($this->session->userdata('id')=='')
+		{redirect('');}
+		 $data=$this->input->post();
+		 $size=$this->db->select('id')->from('branches')->where('city',$data['city'])->get()->result();
+         if(Sizeof($size)!=0)
+		 {
+	         $size=$size[0];
+			 $size=(array)$size;
+			 $size=$size['id'];
+			 $d['status']='deleted';
+			 $this->db->where('id',$size);
+             $this->db->update('branches',$d);
+			 //$this->db->delete('branches',array('id' => $size ));
+			 print_r('success');
+		 }
+         else{print_r("no such branch exists");}
+	}
 
 
 }
