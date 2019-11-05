@@ -766,6 +766,94 @@ function deletepizza()
 		 }
          else{print_r("no such branch exists");}
 	}
+	
+	public function proceedt()
+{
+  if($this->session->userdata('id')=='')
+  {redirect('');}
+  $d['status']='ordered';
+  $this->db->where('uid',$this->session->userdata('id'))->where('status','added');
+      $this->db->update('temp_p',$d);
+    $this->load->view('orderisplaced.php');
+}
+
+public function pay_submit()
+{		if($this->session->userdata('id')=='')
+  {redirect('');}
+    $d['status']='ordered';
+  $this->db->where('uid',$this->session->userdata('id'))->where('status','added');
+      $this->db->update('temp_o',$d);
+  $this->load->view('orderisplaced.php');
+
+}
+
+public function view_review()
+{
+  $review=$this->db->select('review')->from('review')->get()->result();
+  $pizzaname=$this->db->select('pizzaname')->from('review')->get()->result();
+  $data['review']=$review;
+  $data['pizzaname']=$pizzaname;
+  $this->load->view('view_review.php',$data);
+}
+
+public function toppings_click($name,$price,$category)
+{
+    if($this->session->userdata('id')=='')
+  {redirect('');}
+    $input['uid']=$this->session->userdata('id');
+  $input['name']=$name;
+  $input['price']=$price;
+  $input['category']=$category;
+
+  $size=$this->db->select('id')->from('temp_p')->where('uid',$this->session->userdata('id'))->where('name',$name)->get()->result();
+
+  $input['status']='added';
+    $this->db->insert('temp_p',$input);
+  $data=$this->db->select('*')->from('toppings')->where('status','added')->get()->result();
+  $array['input']=$data;
+  $this->load->view('toppings_display.php',$array);
+  }
+
+public function delete_t($id)
+{		if($this->session->userdata('id')=='')
+  {redirect('');}
+
+  $this->db->delete('temp_p',array('id' => $id,'uid' => $this->session->userdata('id') ));
+     $size=$this->db->select('id')->from('temp_p')->where('uid',$this->session->userdata('id'))->get()->result();
+  if(sizeof($size)!=0){
+
+  $data=$this->db->select('*')->from('toppings')->where('status','added')->get()->result();
+  $array['input']=$data;
+  $this->load->view('toppings_display.php',$array);}
+  else{redirect('readymade');}
+}
+public function delete_p($id)
+{		if($this->session->userdata('id')=='')
+  {redirect('');}
+
+  $this->db->delete('temp_p',array('id' => $id,'uid' => $this->session->userdata('id') ));
+    $data=$this->db->select('*')->from('pizzas')->where('status','added')->get()->result();
+  $array['data']=$data;
+  $this->load->view('readymade.php',$array);
+}
+public function pizza_click($name,$price,$category,$size)
+{
+    if($this->session->userdata('id')=='')
+  {redirect('');}
+    $input['uid']=$this->session->userdata('id');
+  $input['name']=$name;
+  $input['price']=$price;
+  $input['category']=$category;
+  $input['size']=$size;
+  $size=$this->db->select('id')->from('temp_p')->where('uid',$this->session->userdata('id'))->where('name',$name)->where('size',$size)->get()->result();
+
+    $input['status']='added';
+    $this->db->insert('temp_p',$input);
+  $data=$this->db->select('*')->from('pizzas')->where('status','added')->get()->result();
+  $array['data']=$data;
+  $this->load->view('readymade.php',$array);
+  }
+
 
 
 }
