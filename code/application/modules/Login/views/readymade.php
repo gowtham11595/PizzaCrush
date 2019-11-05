@@ -22,12 +22,12 @@ else{e.value="no";location.reload();}
     width:100px;
     height:30px;
 }
-.pic:hover { opacity: 0.3; filter: alpha(opacity=30); } 
+.pic:hover { opacity: 0.3; filter: alpha(opacity=30); }
 
 body{margin:40px;}
 
 .stepwizard-step p {
-    margin-top: 10px;    
+    margin-top: 10px;
 }
 
 .stepwizard-row {
@@ -35,7 +35,7 @@ body{margin:40px;}
 }
 
 .stepwizard {
-    display: table;     
+    display: table;
     width: 100%;
     position: relative;
 }
@@ -54,10 +54,10 @@ body{margin:40px;}
     height: 1px;
     background-color: #ccc;
     z-order: 0;
-    
+
 }
 
-.stepwizard-step {    
+.stepwizard-step {
     display: table-cell;
     text-align: center;
     position: relative;
@@ -77,9 +77,9 @@ body{margin:40px;}
 <div class="container" style="margin-top:0px;margin-bottom:30px;">
 <a href="<?php echo base_url();?>" ><button type="button" class="navbar-btn btn-success btn pull-left" style="margin-left:30px;">Home</button></a>
 <a href="<?php echo base_url();?>locator" ><button type="button" class="navbar-btn btn-success btn pull-left" style="margin-left:30px;">Restaurant Locator</button></a>
-<a href="<?php echo base_url();?>view_review" ><button type="button" class="navbar-btn btn-success btn pull-left" style="margin-left:30px;">View Reviews</button></a>                    
+<a href="<?php echo base_url();?>view_review" ><button type="button" class="navbar-btn btn-success btn pull-left" style="margin-left:30px;">Pizza guide</button></a>
 <?php
-if($this->session->userdata('id')!=null){ 
+if($this->session->userdata('id')!=null){
 ?>
 <a href="<?php echo base_url();?>logout" class="navbar-btn btn-success btn pull-right" style="  margin-left:30px;">Logout</a>
 <?php
@@ -98,7 +98,7 @@ if($this->session->userdata('id')!=null){
         <div class="stepwizard-step">
             <button type="button" class="btn btn-default btn-circle" disabled="disabled">3</button>
             <p>Payment</p>
-        </div> 
+        </div>
     </div>
 </div>
 
@@ -109,7 +109,7 @@ if($this->session->userdata('id')!=null){
 <h4 style="font-weight: bold; color:lime">
 VEG:
 </h4>
-    
+
 <div class="container" style="background: whitesmoke;">
 <h5 style="background:white; color:lime; font-weight:bold;border-radius: 15px 50px 30px;">SMALL</h5>
 <div class="row-fluid" >
@@ -125,11 +125,11 @@ foreach($data as $key=>$value)
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;">
-<div class="pic"> 
+<div class="pic">
 <img src="<?php echo base_url();?>assets/uploads/<?php print_r($value['path']);?>"  class="img-thumbnail" style="height:90%;width:90%;cursor: pointer;">
 </div>
 <div class="row-fluid" style=" font-weight: bold;" >
-<?php 
+<?php
 
 print_r($value['name']);
 ?>
@@ -137,10 +137,10 @@ print_r($value['name']);
 </div>
 <div class="row-fluid">
 <div class="col-sm-7">
-Price: Rs.
-<?php 
+Price: $
+<?php
 print_r($value['price']);
-?>  
+?>
 </div>
 <div class="col-sm-5">
 <a href="<?php echo base_url();?>pizza_click/<?php print_r($value['name'])?>/<?php print_r($value['price'])?>/<?php print_r($value['category']);?>/<?php print_r($value['size']);?>">
@@ -149,10 +149,10 @@ print_r($value['price']);
 </div>
 </div>
 </div>
-<?php	
+<?php
 	}
 }
-?> 
+?>
 
 </div></div>
 
@@ -172,12 +172,12 @@ foreach($data as $key=>$value)
 <div class="col-sm-6" style="font-size: 80%;border-radius:25px; background: white;  border: 2px solid #8AC007;padding: 20px; width: 230px;height: 230px; margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
-    margin-left: 10px;">	
+    margin-left: 10px;">
 <div class="pic">
 <img src="<?php echo base_url();?>assets\uploads\<?php print_r($value['path']);?>"  class="img-thumbnail" style="height:90%;width:90%;cursor: pointer;">
 </div>
 <div class="row-fluid" style=" font-weight: bold;" >
-<?php 
+<?php
 
 print_r($value['name']);
 ?>
@@ -186,7 +186,7 @@ print_r($value['name']);
 <div class="row-fluid">
 <div class="col-sm-7">
 Price: Rs.
-<?php 
+<?php
 print_r($value['price']);
 ?>
 </div>
@@ -199,10 +199,10 @@ print_r($value['price']);
 
 </div>
 
-<?php	
+<?php
 	}
 }
-?> 
+?>
 </div></div>
 
 
@@ -227,7 +227,7 @@ foreach($data as $key=>$value)
 <img src="<?php echo base_url();?>assets\uploads\<?php print_r($value['path']);?>"  class="img-thumbnail" style="height:90%;width:90%;cursor: pointer;">
 </div>
 <div class="row-fluid" style=" font-weight: bold;" >
-<?php 
+<?php
 
 print_r($value['name']);
 ?>
@@ -236,7 +236,7 @@ print_r($value['name']);
 <div class="row-fluid">
 <div class="col-sm-7">
 Price: Rs.
-<?php 
+<?php
 print_r($value['price']);
 ?>
 </div>
@@ -249,10 +249,10 @@ print_r($value['price']);
 
 </div>
 
-<?php	
+<?php
 	}
 }
-?> 
+?>
 </div></div>
 
 
@@ -285,12 +285,12 @@ foreach($data as $key=>$value)
 <div class="col-sm-6" style="font-size: 80%;border-radius:25px; background: white;  border: 2px solid #8AC007;padding: 20px; width: 230px;height: 230px; margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
-    margin-left: 10px;">	
+    margin-left: 10px;">
 <div class="pic">
 <img src="<?php echo base_url();?>assets\uploads\<?php print_r($value['path']);?>"  class="img-thumbnail" style="height:90%;width:90%;cursor: pointer;">
 </div>
 <div class="row-fluid" style=" font-weight: bold;" >
-<?php 
+<?php
 
 print_r($value['name']);
 ?>
@@ -299,7 +299,7 @@ print_r($value['name']);
 <div class="row-fluid">
 <div class="col-sm-7">
 Price: Rs.
-<?php 
+<?php
 print_r($value['price']);
 ?>
 </div>
@@ -312,10 +312,10 @@ print_r($value['price']);
 
 </div>
 
-<?php	
+<?php
 	}
 }
-?> 
+?>
 
 </div></div>
 
@@ -335,12 +335,12 @@ foreach($data as $key=>$value)
 <div class="col-sm-6" style="font-size: 80%;border-radius:25px; background: white;  border: 2px solid #8AC007;padding: 20px; width: 230px;height: 230px; margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
-    margin-left: 10px;">	
+    margin-left: 10px;">
 <div class="pic">
 <img src="<?php echo base_url();?>assets\uploads\<?php print_r($value['path']);?>"  class="img-thumbnail" style="height:90%;width:90%;cursor: pointer;">
 </div>
 <div class="row-fluid" style=" font-weight: bold;" >
-<?php 
+<?php
 
 print_r($value['name']);
 ?>
@@ -349,7 +349,7 @@ print_r($value['name']);
 <div class="row-fluid">
 <div class="col-sm-7">
 Price: Rs.
-<?php 
+<?php
 print_r($value['price']);
 ?>
 </div>
@@ -362,10 +362,10 @@ print_r($value['price']);
 
 </div>
 
-<?php	
+<?php
 	}
 }
-?> 
+?>
 
 </div></div>
 
@@ -383,12 +383,12 @@ foreach($data as $key=>$value)
 <div class="col-sm-6" style="font-size: 80%;border-radius:25px; background: white;  border: 2px solid #8AC007;padding: 20px; width: 230px;height: 230px; margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
-    margin-left: 10px;">	
+    margin-left: 10px;">
 <div class="pic">
 <img src="<?php echo base_url();?>assets\uploads\<?php print_r($value['path']);?>"  class="img-thumbnail" style="height:90%;width:90%;cursor: pointer;">
 </div>
 <div class="row-fluid" style=" font-weight: bold;" >
-<?php 
+<?php
 
 print_r($value['name']);
 ?>
@@ -397,7 +397,7 @@ print_r($value['name']);
 <div class="row-fluid">
 <div class="col-sm-7">
 Price: Rs.
-<?php 
+<?php
 print_r($value['price']);
 ?>
 </div>
@@ -410,10 +410,10 @@ print_r($value['price']);
 
 </div>
 
-<?php	
+<?php
 	}
 }
-?> 
+?>
 
 </div></div>
 
@@ -426,11 +426,11 @@ print_r($value['price']);
 <div class="navbar navbar-default navbar-fixed-bottom" >
     <div class="container" style="display:block;">
       <p class="navbar-text pull-left" style="display:block;color:blue;" >
-	  
+
 	  Orders made by you:
           <?php
              $result=$this->db->select('*')->from('temp_p')->where('uid',$this->session->userdata('id'))->where('status','added')->get()->result();
-if(sizeof($result)!=0){            	
+if(sizeof($result)!=0){
 			foreach($result as $key=>$v)
 			{
 				$v=(array)$v;
@@ -443,16 +443,16 @@ if(sizeof($result)!=0){
 		  </a>
 		  </div>
 		  </div>
-          <?php		  
+          <?php
 			}
-}			
+}
 		  ?>
-		 
+
       </p>
-      			  
+
       <a href="<?php echo base_url();?>toppings_display" class="navbar-btn btn-success btn pull-right" style="  margin-left:30px;">
       <span class="glyphicon glyphicon-arrow-right" ></span>NEXT</a>
-      
+
 
       <h4 style="color:green;" class=" pull-right">
 	    Total Price: Rs.
@@ -462,10 +462,10 @@ if(sizeof($result)!=0){
 			   $total=$total['sum(price)'];
 		      print_r($total);?></h4>
     </div>
-    
+
   </div>
 
 
 
-</body>	
+</body>
 </html>
