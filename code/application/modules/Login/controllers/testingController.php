@@ -145,6 +145,122 @@ class testingController extends MX_Controller
      echo $this->unit->report();
   }
 
+  public function Test_deletesauce() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="Alfredo";
+     $_POST = $input;
+     $this->deletesauce($_POST);
+     $test = count($this->db->select('name')->from('sauce')->where('name',$input['name'])->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test for updating sauce price";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }
+ 
+    public function Test_deletebranch() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="Himayatnagar";
+     $_POST = $input;
+     $this->updatesauceprice_submit($_POST);
+     $test = count($this->db->select('name')->from('branch')->where('name',$input['name'])->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test for delete branch";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }  
+
+    public function Test_deletepizza_submit() {
+         $this->load->library("unit_test");
+         $_SERVER["REQUEST_METHOD"] = "POST";
+         $input['name']="Veg Pizza";
+         $_POST = $input;
+         $this->deletepizza_submit($_POST);
+         $test = count($this->db->select('name')->from('pizza')->where('name',$input['name'])->get()->result());
+         $expected_result = 0;
+         $test_name = "Unit test for deleting pizza";
+         $this->unit->run($test, $expected_result, $test_name);
+         echo $this->unit->report();
+      }
+
+  public function Test_deletetoppings_submit() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="onions";
+     $_POST = $input;
+     $this->deletetoppings_submit($_POST);
+     $test = count($this->db->select('name')->from('toppings')->where('name',$input['name'])->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test for deleting toppings";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }
+
+  public function Test_deletebread_submit() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="Tomato";
+     $_POST = $input;
+     $this->deletebread_submit($_POST);
+     $test = count($this->db->select('name')->from('bread')->where('name',$input['name'])->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test for delete bread";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }
+
+  public function Test_deletesauce_submit() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="Game";
+     $_POST = $input;
+     $this->deletesauce_submit($_POST);
+     $test = count($this->db->select('name')->from('sauce')->where('name',$input['name'])->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test for deleting sauce price";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }
+
+  public function Test_deletebranch_submit() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="Alfredo";
+     $_POST = $input;
+     $this->deletebranch_submit($_POST);
+     $test = count($this->db->select('name')->from('branch')->where('name',$input['name'])->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test Delete Branch";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }
+
+  public function Test_delete_p() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="Delete_P";
+     $_POST = $input;
+     $this->deletebranch_submit($_POST);
+     $test = count($this->db->select('name')->from('pizza')->where('name',$input['name'])->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test delete Pizza";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }
+
+  public function Test_delete_p() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="Delete_T";
+     $_POST = $input;
+     $this->deletebranch_submit($_POST);
+     $test = count($this->db->select('name')->from('pizza')->where('name',$input['name'])->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test delete Toppings";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }
 
 public function testing()
  {
