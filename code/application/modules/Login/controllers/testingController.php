@@ -1,3 +1,4 @@
+//Author: Gowtham Kesa
 <?php
 function sum($a,$b){
   return $a+$b;
@@ -15,7 +16,7 @@ class testingController extends MX_Controller
     parent:: _construct();
   }
 
-
+//Add user test
   public function Test_AddUser() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -34,7 +35,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
- 
+ //add pizza
  public function Test_do_addpizza() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -49,7 +50,7 @@ class testingController extends MX_Controller
      echo $this->unit->report();
   }
 
-
+//add toppings
  public function Test_do_addtoppings() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -64,7 +65,7 @@ class testingController extends MX_Controller
      echo $this->unit->report();
   }
 
-
+//adding bread
   public function Test_do_addbread() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -78,7 +79,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
-
+//adding sauce test
   public function Test_do_addsauce() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -91,7 +92,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
-
+//testing update pizza price
   public function Test_updatepizzaprice_submit() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -104,7 +105,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
-
+//update toppings price testing
   public function Test_updatetoppingsprice_submit() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -118,7 +119,7 @@ class testingController extends MX_Controller
      echo $this->unit->report();
   }
 
-
+//testing update extra price
   public function Test_updateextrasprice_submit() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -131,7 +132,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
-  
+  //testing update sauce price
   public function Test_updatesauceprice_submit() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -144,7 +145,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
-
+//testing delete sauce
   public function Test_deletesauce() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -157,7 +158,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
- 
+ //testing delete branch
     public function Test_deletebranch() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -170,7 +171,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }  
-
+//testing delete pizza 
     public function Test_deletepizza_submit() {
          $this->load->library("unit_test");
          $_SERVER["REQUEST_METHOD"] = "POST";
@@ -183,7 +184,7 @@ class testingController extends MX_Controller
          $this->unit->run($test, $expected_result, $test_name);
          echo $this->unit->report();
       }
-
+//testing delete toppings
   public function Test_deletetoppings_submit() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -196,7 +197,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
-
+// testing delete bread
   public function Test_deletebread_submit() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -209,7 +210,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
-
+//testing delete sauce
   public function Test_deletesauce_submit() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -222,7 +223,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
-
+//testing delete branch
   public function Test_deletebranch_submit() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -235,7 +236,7 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
-
+//testing delete p
   public function Test_delete_p() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
@@ -248,8 +249,8 @@ class testingController extends MX_Controller
      $this->unit->run($test, $expected_result, $test_name);
      echo $this->unit->report();
   }
-
-  public function Test_delete_p() {
+//testing delete p
+  public function fTest_delete_p() {
      $this->load->library("unit_test");
      $_SERVER["REQUEST_METHOD"] = "POST";
      $input['name']="Delete_T";
