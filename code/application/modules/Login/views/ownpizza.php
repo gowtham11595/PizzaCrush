@@ -1,3 +1,4 @@
+<!-- Author: Nagendra Beesabathuni-->
 <html>
 <head>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
@@ -138,7 +139,7 @@ print_r($value['name']);
 </div>
 <div class="row-fluid">
 <div class="col-sm-7">
-Price: Rs.
+Price: $
 <?php 
 print_r($value['price']);
 ?>  
@@ -185,7 +186,7 @@ print_r($value['name']);
 </div>
 <div class="row-fluid">
 <div class="col-sm-7">
-Price: Rs.
+Price: $
 <?php 
 print_r($value['price']);
 ?>  
@@ -233,7 +234,7 @@ print_r($value['name']);
 </div>
 <div class="row-fluid">
 <div class="col-sm-7">
-Price: Rs.
+Price: $
 <?php 
 print_r($value['price']);
 ?>  
@@ -310,7 +311,7 @@ if(sizeof($result)!=0){
      
 
       <h4 style="color:green;" class=" pull-right">
-	    Total Price: Rs.
+	    Total Price: $
         <?php
         //   $size=$this->db->select('id')->from('temp_o')->where('uid',$this->session->userdata('id'))->where('status','added')->get()->result();		
 		   
