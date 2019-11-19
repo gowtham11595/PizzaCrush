@@ -263,6 +263,63 @@ class testingController extends MX_Controller
      echo $this->unit->report();
   }
 
+  //testing own toppings
+  public function Test_own_toppings_click() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="Toppings";
+     $_POST = $input;
+     $this->own_toppings_click($_POST);
+     $test = count($this->db->select('name')->from('toppings')->where('name',$input['name'])->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test delete Toppings";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }
+  
+  //testing own delivered
+  public function Test_owndelivered() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="Alfredo";
+     $_POST = $input;
+     $this->deletebranch_submit($_POST);
+     $test = count($this->db->select('uid')->from('temp_o')->where('uid',$input['uid'])->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test own delivered";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }
+  
+  //testing bread_click
+  public function Test_bread_click() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="Alfredo";
+     $_POST = $input;
+     $this->deletebranch_submit($_POST);
+     $test = count($this->db->select('name')->from('bread')->where('uid',$input['uid'])->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test bread click";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }
+  
+  //testing toppings click
+  public function Test_toppings_click() {
+     $this->load->library("unit_test");
+     $_SERVER["REQUEST_METHOD"] = "POST";
+     $input['name']="Alfredo";
+     $_POST = $input;
+     $this->deletebranch_submit($_POST);
+     $test = count($this->db->select('name')->from('toppings')->get()->result());
+     $expected_result = 0;
+     $test_name = "Unit test toppings delivered";
+     $this->unit->run($test, $expected_result, $test_name);
+     echo $this->unit->report();
+  }
+  
+  
 public function testing()
  {
  return "hello world";
