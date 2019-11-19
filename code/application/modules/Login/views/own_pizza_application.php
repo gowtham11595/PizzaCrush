@@ -488,7 +488,7 @@ if(sizeof($result)!=0){
       <span class="glyphicon glyphicon-arrow-right" ></span>NEXT</a>
 
       <h4 style="color:green;" class=" pull-right">
-	    Total Price: Rs.
+	    Total Price: $
         <?php
         //   $size=$this->db->select('id')->from('temp_o')->where('uid',$this->session->userdata('id'))->where('status','added')->get()->result();		
 		   

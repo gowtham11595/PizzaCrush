@@ -139,7 +139,7 @@ print_r($value['name']);
 </div>
 <div class="row-fluid">
 <div class="col-sm-7">
-Price: Rs.
+Price: $
 <?php 
 print_r($value['price']);
 ?>  
@@ -216,7 +216,7 @@ if(sizeof($result)!=0){
   
  			  
       <h4 style="color:green;" class=" pull-right">
-	    Total Price: Rs.
+	    Total Price: $
         <?php
         //   $size=$this->db->select('id')->from('temp_o')->where('uid',$this->session->userdata('id'))->where('status','added')->get()->result();		
 		   $b=0;$t=0;$s=0;
